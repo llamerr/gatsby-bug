@@ -1,0 +1,11 @@
+$colors: (
+  primary-black: #000000,
+  primary-white: #FFFFFF,
+  primary-yellow: #FFCC00,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
+  }
+}
